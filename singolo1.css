@@ -1,4 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
+    background-color: thistle;
+}
+
+header {
+    width: 940px;
+    height: 103px;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #2d303a;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 113px;
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+}
+
+span {
+    color: #f06c64;
+}
+
+nav li {
+    display: inline;
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
 }
