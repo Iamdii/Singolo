@@ -63,9 +63,85 @@ nav li:not(:first-child)::before {
 }
 
 .slider {
-    height: 600px;
+    height: 594px;
     background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    position: relative;
 }
+
+
+.left-arrow {
+    position: absolute;
+    top: 282px;
+    left: 40px;
+}
+
+.left-arrow:hover {
+    cursor: pointer;
+}
+
+.phones {
+    position: relative;
+
+}
+
+.phones .phone-vertical {
+    position: absolute;
+    margin-top: 53px;
+    margin-left: 111px;
+    z-index: 2;
+}
+
+.shadow-one {
+    position: absolute;
+    margin-top: 53px;
+    margin-left: 111px;
+    z-index: 1;
+}
+
+.screen-v {
+    position: absolute;
+    margin-top: 114.5px;
+    margin-left: 120.5px;
+    z-index: 3;
+    border: 1px solid #c7c8c7;
+    border-radius: 8px;
+}
+
+.phones .phone-horizontal {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 53px;
+    margin-left: 548px;
+    z-index: 2;
+}
+
+.shadow-two {
+    position: absolute;
+    margin-top: 174px;
+    margin-left: 427px;
+    z-index: 1;
+}
+
+.screen-h {
+    position: absolute;
+    margin-top: 185px;
+    margin-left: 482.5px;
+    z-index: 3;
+    border: 1px solid #c7c8c7;
+    border-radius: 8px;
+}
+    
+.right-arrow {
+    position: absolute;
+    top: 282px;
+    right: 40px;
+}
+
+.right-arrow:hover {
+    cursor: pointer;
+}
+
 
 
 
