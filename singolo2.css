@@ -17,7 +17,8 @@ body{
     border-bottom: 6px solid #323746;
 }
 
-.portfolio-word {
+.portfolio-word,
+.about-word {
     margin-top: 2px;
     font-family: 'Lato';
     font-size: 30px;
@@ -73,10 +74,69 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .portfolio-images .img {
     margin-bottom: 20px;
+}
+
+.about {
+    height: 729px;
+    padding-left: 40px;
+    padding-top: 67.5px;
+    padding-right: 40px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+
+}
+
+.about-fusce {
+    height: 57px;
+    margin-top: 27.5px;
+    margin-bottom: -32px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.149px;
+    color: #767e9e;
+}
+
+.designers {
+    display: flex;
+    margin-top: 79px;
+}
+
+.desmond {
+    margin-left: 5px;
+}
+
+.scolara {
+    margin-left: 15px;
+}
+
+.designer-name {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: #666d89;
+}
+
+.designer-description {
+    margin-top: 8px;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #767e9e;
 }
 
 
