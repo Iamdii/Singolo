@@ -82,7 +82,7 @@ body{
 }
 
 .about {
-    height: 729px;
+    height: 661.5px;
     padding-left: 40px;
     padding-top: 67.5px;
     padding-right: 40px;
@@ -139,4 +139,29 @@ body{
     color: #767e9e;
 }
 
+.social-networks-icons {
+    display: flex;
+    margin-top: 24px;
+}
 
+.desmond .social-networks-icons {
+    padding-left: 4px;
+}
+
+.icons  {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 9.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #767e9e;
+}
+
+.social-networks-icons a {
+    width: 40px;
+}
+
+.icons:hover {
+    cursor: pointer;
