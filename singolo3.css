@@ -1,0 +1,154 @@
+body{
+    margin-top: 0;
+}
+.wrapper {
+    width: 1020px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: auto;
+}
+
+.get-a-quote {
+    height: 644px;
+    padding-top: 4px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.get-a-quote-word {
+    margin-top: 0;
+    padding-top: 40px;
+    margin-left: 40px;
+    padding-top: 65px;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: -0.1px;
+    color: #f0d8d9;
+}
+
+.get-a-quote-text {
+    margin-left: 40px;
+    margin-top: 27px;
+    margin-right: 40px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.15px;
+    color: #f0d8d9;
+}
+
+.quote {
+    display: flex;
+    max-width: 1020px;
+    margin-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+.quote .form-container {
+    width: 604px;
+    
+}
+
+.input-name,
+.input-email,
+.input-subject,
+.input-textarea {
+    height: 35px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 16px;
+    padding-left: 15px;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-size: 400;
+    line-height: 12px;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    background-color: #d6564f;
+}
+
+::placeholder {
+    color: #f48c8f;
+}
+
+.input-textarea {
+    height: 192px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.input-subject {
+    height: 36.5px;
+}
+
+.submit-button {
+    height: 38px;
+    width: 100px;
+    font-family: 'Lato';
+    background-color: #d6564f;
+    border: none;
+    border-radius: 4px;
+    color: #f48c8f;
+}
+
+
+.quote .contact-information {
+    width: 300px;
+}
+
+.quote h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: -0.1px;
+    color: #f0d8d9;
+}
+
+.quisque {
+    height: 75px;
+    width: 300px;
+    margin-top: 10px;
+    font-family: 'Lato';
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0.29px;
+    color: #f0d8d9;
+}
+
+.links {
+    display: block;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 23px;
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 12px;
+    color: #f0d8d9;
+    
+}
+
+.address::before {
+    height: 12px;
+    width: 13px;
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    background-image: url("./assets/location.svg");
+    background-size: 7px;
+    background-repeat: no-repeat;
+}
