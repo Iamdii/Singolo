@@ -86,8 +86,8 @@ nav li:not(:first-child)::before {
 .phones .phone-vertical {
     position: absolute;
     z-index: 2;
-    margin-left: 111.5px;
-    margin-top: 52.5px;
+    margin-left: 111.8px;
+    margin-top: 52.7px;
 }
 
 .shadow-one {
@@ -100,8 +100,8 @@ nav li:not(:first-child)::before {
 .screen-v {
     position: absolute;
     z-index: 3;
-    margin-left: 120.5px;
-    margin-top: 114.5px;
+    margin-left: 119px;
+    margin-top: 114px;
     border: 1px solid #c7c8c7;
     border-radius: 8px;
 }
@@ -109,8 +109,8 @@ nav li:not(:first-child)::before {
 .phones .phone-horizontal {
     position: absolute;
     z-index: 2;
-    margin-left: 547.5px;
-    margin-top: 51.7px;
+    margin-left: 546.7px;
+    margin-top: 51.9px;
     transform: rotate(90deg);
 }
 
@@ -290,12 +290,17 @@ nav li:not(:first-child)::before {
 .services-description {
     margin: 0;
     padding: 0;
+    min-height: 65px;
+    max-width: 220px;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     text-align: justify;
     color: #767e9e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    resize: none;
 }
 
 .services-info {
@@ -385,7 +390,7 @@ nav li:not(:first-child)::before {
 }
 
 .about {
-    height: 660px;
+    height: 660.1px;
     padding-left: 40px;
     padding-top: 67.5px;
     padding-right: 40px;
@@ -421,6 +426,7 @@ nav li:not(:first-child)::before {
 }
 
 .designer-name {
+    max-width: 309px;
     margin-top: 15px;
     margin-bottom: 0px;
     font-family: 'Lato', sans-serif;
@@ -431,17 +437,19 @@ nav li:not(:first-child)::before {
     letter-spacing: 0.1px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     color: #666d89;
     resize: none;
 }
 
 .designer-description {
     margin-top: 8px;
+    padding-right: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
-    text-align: left;
+    text-align: justify;
     color: #767e9e;
 }
 
@@ -585,7 +593,7 @@ nav li:not(:first-child)::before {
     font-size: 11px;
     font-weight: 400;
     line-height: 22px;
-    text-align: left;
+    text-align: justify;
     letter-spacing: 0.41px;
     color: #f0d8d9;
 }
