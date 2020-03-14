@@ -1,11 +1,13 @@
 body{
     margin-top: 0;
 }
+
 .wrapper {
     width: 1020px;
     margin-left: auto;
     margin-top: 0px;
     margin-right: auto;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -51,8 +53,20 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #f06c64;  
+    color: #f06c64; 
+    cursor: pointer; 
 }
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f06c64;
+    cursor: pointer;
+}
+
 
 nav li:not(:first-child)::before {
     content: "·";
@@ -707,4 +721,6 @@ footer span {
     color: #666d89;
 }
 
-
+.selected-navbar-item {
+    color: #f06c64; 
+}

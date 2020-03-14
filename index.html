@@ -6,6 +6,7 @@
         <title>singolo</title>
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
@@ -13,19 +14,19 @@
 
         <!--Header-->
             <header>
-            <div class="logo">
-                <h1>singolo<span>*</span></h1>
-            </div>
-            <!--Navigation-->
-            <nav>
-                <ul class="navigation">
-                    <li>home</li>
-                    <li>services</li>
-                    <li>portfolio</li>
-                    <li>about</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
+                <div class="logo">
+                    <h1>singolo<span>*</span></h1>
+                </div>
+                <!--Navigation-->
+                <nav>
+                    <ul id="nav-bar" class="navigation">
+                        <li><a id="nav-home" href="#">home</a></li>
+                        <li><a id="nav-services" href="#services">services</a></li>
+                        <li><a id="nav-portfolio" href="#portfolio">portfolio</a></li>
+                        <li><a id="nav-about" href="#about">about</a></li>
+                        <li><a id="nav-quote" href="#quote">contact</a></li>
+                    </ul>
+                </nav>
             </header>
 
         <!--Slider section-->
@@ -46,7 +47,7 @@
 
             </section>
 
-            <article class="services">
+            <article id="services" class="services">
             
                     <h2 class="services-header">Our Services</h2>
                     <p class="services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentium. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
@@ -163,7 +164,7 @@
                 </section>
             </article>
 
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <h2 class="portfolio-word">Portfolio</h2>
                 <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
@@ -195,7 +196,7 @@
 
             </section>
 
-            <section class="about">
+            <section id="about" class="about">
                 <h2 class="about-word">About Us</h2>
                 <p class="about-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
@@ -394,7 +395,7 @@
                 </div>
             </section>
 
-            <section class="get-a-quote">
+            <section id="quote" class="get-a-quote">
             
                 <h2 class="get-a-quote-header">Get a Quote</h2>
                 <p class="get-a-quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
