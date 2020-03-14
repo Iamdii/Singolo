@@ -143,6 +143,10 @@ nav li:not(:first-child)::before {
     border: 1px solid #c7c8c7;
     border-radius: 8px;
 }
+
+.hide-display {
+    display: none;
+}
     
 .right-arrow {
     position: absolute;
