@@ -415,7 +415,7 @@ nav li:not(:first-child)::before {
     overflow: hidden;
 }
 
-.portfolio-images .img {
+.portfolio-images .portfolio-img {
     margin-bottom: 20px;
 }
 
@@ -744,4 +744,8 @@ footer span {
 .portfolio .selected-portfolio-button {
     color: #dedede;
     border-color: #dedede; 
+}
+
+.portfolio-images .image-with-outline {
+    outline: #f06c64 solid 5px;
 }

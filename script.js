@@ -1,3 +1,5 @@
+/* Меню с переключением */
+
 let navBar = document.getElementById('nav-bar');
 
 navBar.querySelectorAll('a').forEach(el => el.addEventListener('click', function() {
@@ -13,7 +15,7 @@ function selectNavBarItem(itemId) {
     document.getElementById(itemId).classList.add('selected-navbar-item');
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Активация экранов телефонов */
 
 document.querySelector(".phone-horizontal").addEventListener('click', function() {
     hideDisplay(document.querySelector(".screen-h"));
@@ -33,7 +35,7 @@ function hideDisplay(element) {
     }
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Переключение табов, сдвиг изображений при переключении табов */
 
 let portfolioButtons = document.getElementById('portfolio-navigation');
 
@@ -53,7 +55,7 @@ function selectPortfolioButton(itemId) {
 }
 
 function shiftImg() {
-    let imgArray = Array.from(document.querySelector('.portfolio-images').querySelectorAll('img'));
+    let imgArray = Array.from(document.querySelector('.portfolio-images').querySelectorAll('.portfolio-img'));
     
     document.querySelector('.portfolio-images').innerHTML = '';
 
@@ -64,6 +66,35 @@ function shiftImg() {
       });
 }
 
+/* Взаимодействие с картинками */
 
+let portfolioImages = document.querySelector('.portfolio-images');
+
+portfolioImages.querySelectorAll('img').forEach(el => el.addEventListener('click', function() {
+    imageCleaner();
+    selectImage(this.id);
+}));
+
+function imageCleaner() {
+    portfolioImages.querySelectorAll('img').forEach(el => el.classList.remove('image-with-outline')); 
+}
+
+function selectImage(itemId) {
+    document.getElementById(itemId).classList.add('image-with-outline');
+}
+
+ /* Работа с формой */
+
+let getQuoteForm = document.querySelector('.quote-form');
+    
+getQuoteForm.addEventListener('click', function(event) {
+        event.preventDefault();
+ });
+
+function submit() {
+    console.log(document.querySelector('.input-subject').value);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 
 
