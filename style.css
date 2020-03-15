@@ -374,9 +374,18 @@ nav li:not(:first-child)::before {
 }
 
 .portfolio ul li{
-    margin-right: 10px;
     padding-left: 5.5px;
     padding-right: 5.5px;
+    list-style-type: none;
+    color: #666d89;
+}
+
+.portfolio ul li:hover {
+    color: #dedede;
+    border-color: #dedede;
+}
+
+.portfolio ul li button {
     font-family: 'Lato', sans-serif;
     font-size: 11px;
     font-weight: 400;
@@ -387,11 +396,14 @@ nav li:not(:first-child)::before {
     color: #666d89;
     border: 1px solid #666d89;
     border-radius: 4.5px;
+    outline: none;
+    background-color: #2d303a;
 }
 
-.portfolio ul li:hover {
+.portfolio ul li button:hover {
     color: #dedede;
     border-color: #dedede;
+    outline: none;
 }
 
 .portfolio-images {
@@ -727,4 +739,9 @@ footer span {
 
 .selected-navbar-item {
     color: #f06c64; 
+}
+
+.portfolio .selected-portfolio-button {
+    color: #dedede;
+    border-color: #dedede; 
 }

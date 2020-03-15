@@ -13,7 +13,7 @@ function selectNavBarItem(itemId) {
     document.getElementById(itemId).classList.add('selected-navbar-item');
 }
 
-
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 document.querySelector(".phone-horizontal").addEventListener('click', function() {
     hideDisplay(document.querySelector(".screen-h"));
@@ -32,6 +32,38 @@ function hideDisplay(element) {
         element.classList.add(hideClass);
     }
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+let portfolioButtons = document.getElementById('portfolio-navigation');
+
+portfolioButtons.querySelectorAll('button').forEach(el => el.addEventListener('click', function() {
+    portfolioButtonCleaner();
+    selectPortfolioButton(this.id);
+
+    shiftImg();
+}));
+
+function portfolioButtonCleaner() {
+    portfolioButtons.querySelectorAll('button').forEach(el => el.classList.remove('selected-portfolio-button')); 
+}
+
+function selectPortfolioButton(itemId) {
+    document.getElementById(itemId).classList.add('selected-portfolio-button');
+}
+
+function shiftImg() {
+    let imgArray = Array.from(document.querySelector('.portfolio-images').querySelectorAll('img'));
+    
+    document.querySelector('.portfolio-images').innerHTML = '';
+
+    imgArray.unshift(imgArray.pop());
+
+    imgArray.forEach(function(item){
+        document.querySelector('.portfolio-images').appendChild(item);
+      });
+}
+
 
 
 
