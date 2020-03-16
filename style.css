@@ -749,3 +749,52 @@ footer span {
 .portfolio-images .image-with-outline {
     outline: #f06c64 solid 5px;
 }
+
+.modal-window {
+    display: none; 
+    position: fixed; 
+    z-index: 4; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-window-text { 
+    width: 240px;
+    height: 180px;   
+    position: fixed;
+    left: 44%;
+    bottom: 42%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fefefe;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.modal-window-text p {
+    margin-top: 5px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: #666d89;
+}
+
+.ok-button {
+    margin-top: 5px;
+    color: #f06c64;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.ok-button:hover {
+  color: #c7c8c7;
+  cursor: pointer;
+}
+
+.show-modal-window {
+    display: block;
+}

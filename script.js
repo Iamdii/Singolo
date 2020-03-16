@@ -83,18 +83,60 @@ function selectImage(itemId) {
     document.getElementById(itemId).classList.add('image-with-outline');
 }
 
- /* Работа с формой */
+ /* Взаимодействие с формой */
 
-let getQuoteForm = document.querySelector('.quote-form');
-    
-getQuoteForm.addEventListener('click', function(event) {
+    /* Появление модального окна после нажатия на кнопку Submit */
+
+let submitButton = document.querySelector('.submit-button');
+
+submitButton.addEventListener('click', function(event) {
+    if(document.querySelector('.input-name').value != '' 
+       && document.querySelector('.input-email').value != '') {
         event.preventDefault();
- });
+        showModalWindow();
+        submit();
+    }
+});
 
-function submit() {
-    console.log(document.querySelector('.input-subject').value);
+function showModalWindow() {
+    document.querySelector('.modal-window').classList.add('show-modal-window');
 }
 
-/*------------------------------------------------------------------------------------------------------------------------------------*/
+    /* Закрытие модального окна при нажатии на кнопку ОК */
+
+let okButton = document.querySelector('.ok-button');
+
+okButton.addEventListener('click', function() {
+    hideModalWindow();
+});
+
+function hideModalWindow() {
+    document.querySelector('.modal-window').classList.remove('show-modal-window');
+}
+
+    /* Вывод введенной информации */
+
+function submit() {
+    let inputSubject = document.querySelector('.input-subject').value;
+    let inputDetails = document.querySelector('.input-textarea').value;
+    
+    if(inputSubject.trim() == '') {
+        inputSubject = 'Without subject';
+    } else {
+        inputSubject = 'Subject: ' + inputSubject;
+    }
+
+    document.querySelector('.subject-description').innerHTML = inputSubject;
+
+    if(inputDetails.trim() == '') {
+        inputDetails = 'Without description';
+    } else {
+        inputDetails = 'Description: ' + inputDetails;
+    }
+
+    document.querySelector('.details-description').innerHTML = inputDetails;
+}
+
+
 
 
