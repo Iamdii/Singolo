@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <div class="wrapper">
+        <div id="wrapper" class="wrapper">
 
         <!--Header-->
             <header>
@@ -18,9 +18,9 @@
                     <h1>singolo<span>*</span></h1>
                 </div>
                 <!--Navigation-->
-                <nav>
+                <nav id="nav">
                     <ul id="nav-bar">
-                        <li><a id="nav-home" href="#">home</a></li>
+                        <li><a id="nav-home" href="#home">home</a></li>
                         <li><a id="nav-services" href="#services">services</a></li>
                         <li><a id="nav-portfolio" href="#portfolio">portfolio</a></li>
                         <li><a id="nav-about" href="#about">about</a></li>
@@ -29,30 +29,37 @@
                 </nav>
             </header>
 
+            <div class="header-placeholder"></div>
+
         <!--Slider section-->
-            <section class="slider">
+            <section id="home" class="slider">
 
-                <img class="left-arrow" src="./assets/chev1.svg" alt="Left slider-arrow">
+              <div class="item-container">
 
-                    <div class="phones">
-                        <img class="phone-vertical" src="./assets/IPhone.png" alt="Left phone" width="215" height="458">
-                        <img class="shadow-one" src="./assets/Shadow1.png" alt="Shadow" width="240" height="483">
-                        <img class="screen-v" src="./assets/Screen1.png" alt="Left screen" width="194" height="339">
-                        <img class="phone-horizontal" src="./assets/IPhone.png" alt="Right phone">
-                        <img class="shadow-two" src="./assets/Shadow2.png" alt="Shadow" width="483" height="240">
-                        <img class="screen-h" src="./assets/Screen2.png" alt="Right phone" width="339" height="194">
-                    </div>
+                  <div class="item phones active">
+                      <img class="phone-vertical" src="./assets/IPhone.png" alt="Left phone" width="215" height="458">
+                      <img class="shadow-one" src="./assets/Shadow1.png" alt="Shadow" width="240" height="483">
+                      <img class="screen-v" src="./assets/Screen1.png" alt="Left screen" width="194" height="339">
+                      <img class="phone-horizontal" src="./assets/IPhone.png" alt="Right phone">
+                      <img class="shadow-two" src="./assets/Shadow2.png" alt="Shadow" width="483" height="240">
+                      <img class="screen-h" src="./assets/Screen2.png" alt="Right phone" width="339" height="194">
+                  </div>
 
-                <img class="right-arrow" src="./assets/chev2.svg" alt="Right slider-arrow">
+                  <div class="item blue"></div>
+
+              </div>
+
+              <img class="right-arrow" src="./assets/chev2.svg" alt="Right slider-arrow">
+              <img class="left-arrow" src="./assets/chev1.svg" alt="Left slider-arrow">
 
             </section>
 
-            <article id="services" class="services">
+            <section id="services" class="services">
             
                     <h2 class="services-header">Our Services</h2>
                     <p class="services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentium. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
 
-                <section class="services-section">
+                <div class="services-section">
                   <div class="services-container">
                     <div class="services-item">
                       <div class="services-icon">
@@ -161,8 +168,8 @@
                       </div>
                     </div>
                   </div>
-                </section>
-            </article>
+                </div>
+            </section>
 
             <section id="portfolio" class="portfolio">
                 <h2 class="portfolio-word">Portfolio</h2>

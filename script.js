@@ -1,19 +1,22 @@
 /* Меню с переключением */
 
-let navBar = document.getElementById('nav-bar');
+document.addEventListener('scroll', function() {
+    let curPos = window.scrollY;
+    let sections = document.querySelectorAll('#wrapper>section');
+    let links = document.querySelectorAll('#nav a');
+    let header = document.querySelector('header');
 
-navBar.querySelectorAll('a').forEach(el => el.addEventListener('click', function() {
-    navBarCleaner();
-    selectNavBarItem(this.id);
-}));
-
-function navBarCleaner() {
-    navBar.querySelectorAll('a').forEach(el => el.classList.remove('selected-navbar-item')); 
-}
-
-function selectNavBarItem(itemId) {
-    document.getElementById(itemId).classList.add('selected-navbar-item');
-}
+    sections.forEach((el) => {
+        if(el.offsetTop - header.offsetHeight <= curPos && (el.offsetTop + el.offsetHeight - header.offsetHeight) > curPos) {
+            links.forEach((a) => {
+                a.classList.remove('selected-navbar-item');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('selected-navbar-item');
+                }
+            })
+        }
+    })
+});
 
 /* Активация экранов телефонов */
 
@@ -137,6 +140,53 @@ function submit() {
     document.querySelector('.details-description').innerHTML = inputDetails;
 }
 
+/* Карусель */
 
+let items = document.querySelectorAll('.item');
+let currentItem = 0;
+let isEnabled = true;
 
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+}
 
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('active', direction);
+    });
+}
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('active');
+        isEnabled = true;
+    });
+}
+
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+}
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+}
+
+document.querySelector('.left-arrow').addEventListener('click', function() {
+    if(isEnabled) {
+        previousItem(currentItem);
+    }
+})
+
+document.querySelector('.right-arrow').addEventListener('click', function() {
+    if(isEnabled) {
+        nextItem(currentItem);
+    }
+})
