@@ -6,52 +6,61 @@
         <title>singolo</title>
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
-        <div class="wrapper">
+        <div id="wrapper" class="wrapper">
 
         <!--Header-->
             <header>
-            <div class="logo">
-                <h1>singolo<span>*</span></h1>
-            </div>
-            <!--Navigation-->
-            <nav>
-                <ul class="navigation">
-                    <li>home</li>
-                    <li>services</li>
-                    <li>portfolio</li>
-                    <li>about</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
+                <div class="logo">
+                    <h1>singolo<span>*</span></h1>
+                </div>
+                <!--Navigation-->
+                <nav id="nav">
+                    <ul id="nav-bar">
+                        <li><a id="nav-home" href="#home">home</a></li>
+                        <li><a id="nav-services" href="#services">services</a></li>
+                        <li><a id="nav-portfolio" href="#portfolio">portfolio</a></li>
+                        <li><a id="nav-about" href="#about">about</a></li>
+                        <li><a id="nav-quote" href="#quote">contact</a></li>
+                    </ul>
+                </nav>
             </header>
 
+            <div class="header-placeholder"></div>
+
         <!--Slider section-->
-            <section class="slider">
+            <section id="home" class="slider">
 
-                <img class="left-arrow" src="./assets/chev1.svg" alt="Left slider-arrow">
+              <div class="item-container">
 
-                    <div class="phones">
-                        <img class="phone-vertical" src="./assets/IPhone.png" alt="Left phone" width="215" height="458">
-                        <img class="shadow-one" src="./assets/Shadow1.png" alt="Shadow" width="240" height="483">
-                        <img class="screen-v" src="./assets/Screen1.png" alt="Left screen" width="194" height="339">
-                        <img class="phone-horizontal" src="./assets/IPhone.png" alt="Right phone">
-                        <img class="shadow-two" src="./assets/Shadow2.png" alt="Shadow" width="483" height="240">
-                        <img class="screen-h" src="./assets/Screen2.png" alt="Right phone" width="339" height="194">
-                    </div>
+                  <div class="item phones active">
+                      <img class="red" src="./assets/phones-red.png" alt="Background red" width="1020" height="600">
+                      <img class="phone-vertical" src="./assets/IPhone.png" alt="Left phone" width="215" height="458">
+                      <img class="shadow-one" src="./assets/Shadow1.png" alt="Shadow" width="240" height="483">
+                      <img class="screen-v" src="./assets/Screen1.png" alt="Left screen" width="194" height="339">
+                      <img class="phone-horizontal" src="./assets/IPhone.png" alt="Right phone">
+                      <img class="shadow-two" src="./assets/Shadow2.png" alt="Shadow" width="483" height="240">
+                      <img class="screen-h" src="./assets/Screen2.png" alt="Right phone" width="339" height="194">
+                  </div>
 
-                <img class="right-arrow" src="./assets/chev2.svg" alt="Right slider-arrow">
+                  <div class="item blue"></div>
+
+              </div>
+
+              <img class="right-arrow" src="./assets/chev2.svg" alt="Right slider-arrow">
+              <img class="left-arrow" src="./assets/chev1.svg" alt="Left slider-arrow">
 
             </section>
 
-            <article class="services">
+            <section id="services" class="services">
             
                     <h2 class="services-header">Our Services</h2>
                     <p class="services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentium. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
 
-                <section class="services-section">
+                <div class="services-section">
                   <div class="services-container">
                     <div class="services-item">
                       <div class="services-icon">
@@ -160,42 +169,38 @@
                       </div>
                     </div>
                   </div>
-                </section>
-            </article>
+                </div>
+            </section>
 
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <h2 class="portfolio-word">Portfolio</h2>
                 <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
-                <ul>
-                    <li>All</li>
-                    <li>Web Design</li>
-                    <li>Graphic Design</li>
-                    <li>Artwork</li>
+                <ul id="portfolio-navigation">
+                    <li><button id="portfolio-all">All</button></li>
+                    <li><button id="portfolio-web-design">Web Design</button></li>
+                    <li><button id="portfolio-graphic-design">Graphic Design</button></li>
+                    <li><button id="portfolio-artwork">Artwork</button></li>
                 </ul>
 
                 <div class="portfolio-images">
-                    <img class="img" src="./assets/img1.png" alt="First image">
-                    <img class="img" src="./assets/img2.png" alt="Second image">
-                    <img class="img" src="./assets/img3.png" alt="Third image">
-                    <img class="img" src="./assets/img4.png" alt="Fourth image">
-                    <img class="img" src="./assets/img5.png" alt="Fifth image">
-                    <img class="img" src="./assets/img6.png" alt="Sixth image">
-                    <img class="img" src="./assets/img7.png" alt="Seventh image">
-                    <img class="img" src="./assets/img8.png" alt="Eights image">
-                    <img class="img" src="./assets/img9.png" alt="Ninth image">
-                    <img class="img" src="./assets/img10.png" alt="Tenth image">
-                    <img class="img" src="./assets/img11.png" alt="Eleventh image">
-                    <img class="img" src="./assets/img12.png" alt="Twelveth image">
-
-                    <img class="img" src="./assets/img1.png" alt="First image">
-                    <img class="img" src="./assets/img2.png" alt="Second image">
-                    <img class="img" src="./assets/img3.png" alt="Third image">
+                    <img id="portfolio-first-img" class="portfolio-img" src="./assets/img1.png" alt="First image">
+                    <img id="portfolio-second-img" class="portfolio-img" src="./assets/img2.png" alt="Second image">
+                    <img id="portfolio-third-img" class="portfolio-img" src="./assets/img3.png" alt="Third image">
+                    <img id="portfolio-fourth-img" class="portfolio-img" src="./assets/img4.png" alt="Fourth image">
+                    <img id="portfolio-fifth-img" class="portfolio-img" src="./assets/img5.png" alt="Fifth image">
+                    <img id="portfolio-sixth-img" class="portfolio-img" src="./assets/img6.png" alt="Sixth image">
+                    <img id="portfolio-seventh-img" class="portfolio-img" src="./assets/img7.png" alt="Seventh image">
+                    <img id="portfolio-eights-img" class="portfolio-img" src="./assets/img8.png" alt="Eights image">
+                    <img id="portfolio-ninth-img" class="portfolio-img" src="./assets/img9.png" alt="Ninth image">
+                    <img id="portfolio-tenth-img" class="portfolio-img" src="./assets/img10.png" alt="Tenth image">
+                    <img id="portfolio-eleventh-img" class="portfolio-img" src="./assets/img11.png" alt="Eleventh image">
+                    <img id="portfolio-twelveth-img" class="portfolio-img" src="./assets/img12.png" alt="Twelveth image">
                 </div>
 
             </section>
 
-            <section class="about">
+            <section id="about" class="about">
                 <h2 class="about-word">About Us</h2>
                 <p class="about-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
@@ -394,7 +399,7 @@
                 </div>
             </section>
 
-            <section class="get-a-quote">
+            <section id="quote" class="get-a-quote">
             
                 <h2 class="get-a-quote-header">Get a Quote</h2>
                 <p class="get-a-quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -437,6 +442,16 @@
                 
             </section>
     
+            <div class="modal-window">
+              <div class="modal-window-text">
+                <p><strong>The letter was sent</strong></p>
+                <p class="subject-description"></p>
+                <p class="details-description"></p>
+                <button class="ok-button">OK</button>
+              </div>
+
+            </div>
+
             <footer>
                 <p>&copy Copyright 2013<span>&#x2022</span>by PSDchat.com</p>
     
