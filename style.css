@@ -286,6 +286,8 @@ nav li:not(:first-child)::before {
     margin-top: 116px;
     border: 1px solid #c7c8c7;
     border-radius: 8px;
+    transition: all 0.3s ease;
+
 }
 
 @media only screen and (max-width: 1019px) {
@@ -395,7 +397,7 @@ nav li:not(:first-child)::before {
 }
 
 .hide-display {
-    display: none;
+    opacity: 0;
 }
 
 .left-arrow {
@@ -713,7 +715,7 @@ nav li:not(:first-child)::before {
 
 @media only screen and (max-width: 767px) {
     .services-description {
-        width: 220px;
+        width: 100%;
     }
 }
 
@@ -723,7 +725,7 @@ nav li:not(:first-child)::before {
 
 @media only screen and (max-width: 767px) {
     .services-info {
-        width: 300px;
+        width: 80%;
     }
 }
 
@@ -1188,6 +1190,13 @@ nav li:not(:first-child)::before {
     }
 }
 
+
+@media only screen and (max-width: 374px) {
+    .quote-form {
+        width: 100%;
+    }
+}
+
 .quote .form-container {
     width: 64%;
 }
@@ -1505,3 +1514,14 @@ footer span {
     color: #666d89;
 }
 
+
+
+
+/*----------adaptive-------*/
+
+@media only screen and (max-width: 375px){
+.services-item {
+    max-width: 100%;
+    margin: 0;
+}
+}
