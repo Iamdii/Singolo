@@ -561,6 +561,15 @@ nav li:not(:first-child)::before {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .services {
+        padding-left: 32px;
+        padding-top: 27.8px;
+        padding-right: 32px;
+        border-bottom: none;
+    }
+}
+
 .services-header {
     margin-top: 0;
     margin-bottom: 28px;
@@ -572,6 +581,14 @@ nav li:not(:first-child)::before {
     color: #666d89;
 }
 
+@media only screen and (max-width: 767px) {
+    .services-header {
+        margin-bottom: 18px;
+        height: 18px;
+    }
+}
+
+
 .services-text {
     margin: 0;
     font-size: 1.125rem; 
@@ -580,6 +597,12 @@ nav li:not(:first-child)::before {
     text-align: justify;
     letter-spacing: -0.01px;
     color: #767e9e;
+}
+
+@media only screen and (max-width: 767px) {
+    .services-text {
+        height: 214px;
+    }
 }
 
 .services-section {
@@ -595,10 +618,11 @@ nav li:not(:first-child)::before {
     }
 }
 
-.services-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 34%;
+@media only screen and (max-width: 767px) {
+    .services-section {
+        display: block;
+        margin-top: 25px;
+    }
 }
 
 .services-item {
@@ -610,6 +634,12 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .services-item {
         max-width: calc(50% - 53px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-item {
+        width: 300px;
     }
 }
 
@@ -638,6 +668,18 @@ nav li:not(:first-child)::before {
         margin-right: 34px;
         
       }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-item:nth-child(1),
+    .services-item:nth-child(2),
+    .services-item:nth-child(3),
+    .services-item:nth-child(4),
+    .services-item:nth-child(5),
+    .services-item:nth-child(6) {
+        height: 99px;
+        margin-bottom: 15px;
+    }
 }
 
 .services-icon {
@@ -669,8 +711,20 @@ nav li:not(:first-child)::before {
     color: #767e9e;
 }
 
+@media only screen and (max-width: 767px) {
+    .services-description {
+        width: 220px;
+    }
+}
+
 .services-info {
     padding-left: 1.5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services-info {
+        width: 300px;
+    }
 }
 
 .portfolio {
@@ -681,7 +735,7 @@ nav li:not(:first-child)::before {
     padding-top:  7%;
     padding-right: 4%;
     padding-bottom: 6%;
-    scroll-margin-top: 95px; 
+    scroll-margin-top: 89px; 
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
@@ -689,6 +743,14 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .portfolio {
         border-bottom: 7.7px solid #323746;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio {
+        height: auto;
+        padding: 42px 30px 28px;
+        border-bottom: none;
     }
 }
 
@@ -706,8 +768,21 @@ nav li:not(:first-child)::before {
     margin-top: 1px;
 }
 
+@media only screen and (max-width: 767px) {
+    .portfolio-word {
+        margin-bottom: 0;
+    }
+}
+
 .about-word {
     margin-top: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-word {
+        height: 19px;
+        margin: 0;
+    }
 }
 
 .portfolio-text {
@@ -722,10 +797,25 @@ nav li:not(:first-child)::before {
     color: #767e9e;
 }
 
+@media only screen and (max-width: 767px) {
+    .portfolio-text {
+        height: 96px;
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+}
+
 .portfolio ul {
     display: flex;
     margin-bottom: 11px;
     padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio ul {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 .portfolio ul li{
@@ -772,13 +862,24 @@ nav li:not(:first-child)::before {
     overflow: hidden;
 }
 
-.portfolio-images:nth-child(n+13) {
+.portfolio-img:nth-child(n + 13) {
     display: none;
 }
 
 @media only screen and (max-width: 1019px) {
     .portfolio-images {
         min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-img {
+        height: 128px;
+        width: 151px;
+    }
+
+    .portfolio-img:nth-child(n + 9) {
+        display: none;
     }
 }
 
@@ -789,6 +890,13 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .portfolio-images .portfolio-img {
         width: calc(100% / 3 - 20px * 2 / 3);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-images .portfolio-img {
+        width: calc(51.5% - 13px);
+        margin-bottom: 14px;
     }
 }
 
@@ -810,7 +918,7 @@ nav li:not(:first-child)::before {
     padding-top: 6.5%;
     padding-right: 4%;
     padding-bottom: 6.5%;
-    scroll-margin-top: 95px; 
+    scroll-margin-top: 90px; 
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
@@ -820,6 +928,17 @@ nav li:not(:first-child)::before {
         min-height: auto;
         padding-top: 60px;
         padding-bottom: 75px;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about {
+        min-height: auto;
+        padding-left: 30px;
+        padding-top: 33px;
+        padding-right: 31px;
+        padding-bottom: 45px;
         border-bottom: none;
     }
 }
@@ -836,6 +955,14 @@ nav li:not(:first-child)::before {
     color: #767e9e;
 }
 
+@media only screen and (max-width: 767px) {
+    .about-text {
+        height: auto;
+        margin-top: 14px;
+        margin-bottom: 25px;
+    }
+}
+
 .designers {
     display: flex;
     margin-top: 79px;
@@ -844,6 +971,13 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .designers {
         margin-top: 93px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .designers {
+        display: block;
+        margin-top: 0;
     }
 }
 
@@ -875,6 +1009,27 @@ nav li:not(:first-child)::before {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .adam,
+    .desmond,
+    .scolara {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .adam,
+    .desmond {
+        margin-bottom: 34px;
+    }
+
+    .adam-photo,
+    .desmond-photo,
+    .scolara-photo {
+        width: 100%;
+    }
+}
+
 .designer-name {
     max-width: 309px;
     margin-top: 15px;
@@ -891,6 +1046,12 @@ nav li:not(:first-child)::before {
     color: #666d89;
 }
 
+@media only screen and (max-width: 767px) {
+    .designer-name {
+        margin-top: 18px;
+    }
+}
+
 .designer-description {
     margin-top: 8px;
     padding-right: 10px;
@@ -901,9 +1062,22 @@ nav li:not(:first-child)::before {
     color: #767e9e;
 }
 
+@media only screen and (max-width: 767px) {
+    .designer-description {
+        margin-top: 5px;
+        margin-bottom: 9px;
+    }
+}
+
 .designers-social-networks-icons {
     display: flex;
     margin-top: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .designers-social-networks-icons {
+        margin-top: 0;
+    }
 }
 
 .icons {
@@ -943,6 +1117,16 @@ nav li:not(:first-child)::before {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .get-a-quote {
+        padding-top: 44px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 42px;
+        border-bottom: none;
+    }
+}
+
 .get-a-quote-header {
     margin-top: 0;
     padding-top: 65.5px;
@@ -957,6 +1141,14 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .get-a-quote-header {
         padding-top: 53px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .get-a-quote-header {
+        margin: 0;
+        padding: 0;
+        height: 20px;
     }
 }
 
@@ -990,6 +1182,12 @@ nav li:not(:first-child)::before {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .quote {
+        display: block;
+    }
+}
+
 .quote .form-container {
     width: 64%;
 }
@@ -997,6 +1195,12 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .quote .form-container {
         width: 415px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .quote .form-container{
+        width: 315px;
     }
 }
 
@@ -1028,6 +1232,19 @@ nav li:not(:first-child)::before {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .input-name,
+    .input-email,
+    .input-subject,
+    .input-textarea {
+        width: calc(100% - 15px);
+    }
+
+    .form-container .input-textarea {
+        width: calc(100% - 15px);
+    }
+}
+
 ::placeholder {
     color: #f48c8f;
 }
@@ -1048,10 +1265,24 @@ nav li:not(:first-child)::before {
 .submit-button {
     height: 38px;
     width: 100px;
-    background-color: #d6564f;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fbc65f;
     border: none;
     border-radius: 4px;
-    color: #f48c8f;
+    color: #2d302d;
+}
+
+@media only screen and (max-width: 1019px) {
+    .submit-button {
+        margin-bottom: 38px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .submit-button {
+        width: 100%;
+    }
 }
 
 .quote .contact-information {
@@ -1061,6 +1292,13 @@ nav li:not(:first-child)::before {
 @media only screen and (max-width: 1019px) {
     .contact-information {
         width: 221px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .quote .contact-information {
+        width: 100%;
+        margin-top: 32px;
     }
 }
 
@@ -1085,6 +1323,13 @@ nav li:not(:first-child)::before {
     color: #f0d8d9;
 }
 
+@media only screen and (max-width: 767px) {
+    .contact-information-text {
+        margin-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
 .contact-information-links {
     display: block;
     position: relative;
@@ -1093,6 +1338,13 @@ nav li:not(:first-child)::before {
     font-size: 0.6875rem;
     line-height: 12px;
     color: #f0d8d9;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-information-links {
+        margin-top: 5px;
+        padding-top: 0;
+    }
 }
 
 .contact-information-links a {
@@ -1217,6 +1469,13 @@ footer {
     background-color: #2d303a;
 }
 
+@media only screen and (max-width: 767px) {
+    footer {
+        height: 76px;
+        justify-content: center;
+    }
+}
+
 footer p {
     margin: 0;
     padding-top: 31px;
@@ -1225,6 +1484,12 @@ footer p {
     letter-spacing: 0.38px;
     word-spacing: 0.5px;
     color: #666d89;
+}
+
+@media only screen and (max-width: 767px) {
+    footer p {
+        display: none;
+    }
 }
 
 footer .social-networks-icons {
