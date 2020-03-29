@@ -239,6 +239,7 @@ nav li:not(:first-child)::before {
         width: 162.36px;
         height: 344.26px;
         margin-left: 83.81px;
+        margin-top: 40.97px;
     }
   }
 
@@ -265,6 +266,7 @@ nav li:not(:first-child)::before {
       width: 180.71px;
       height: 363.67px;
       margin-left: 84px;
+      margin-top: 41.04px;
     }
   }
 
@@ -295,7 +297,7 @@ nav li:not(:first-child)::before {
       width: 144.55px;
       height: 253.73px;
       margin-left: 92px;
-      margin-top: 99px;
+      margin-top: 87px;
     }
 }
 
@@ -323,7 +325,7 @@ nav li:not(:first-child)::before {
     .phones .phone-horizontal {
       height: 344.26px;
       width: 162.36px;
-      margin-top: 60px;
+      margin-top: 42px;
       margin-left: 400px;
     }
 }
@@ -351,7 +353,7 @@ nav li:not(:first-child)::before {
       width: 345.67px;
       height: 180.71px;
       margin-left: 309px;
-      margin-top: 155px;
+      margin-top: 133.65px;
     }
 }
 
@@ -381,7 +383,7 @@ nav li:not(:first-child)::before {
         width: 253.73px;
         height: 145px;
         margin-left: 351.5px;
-        margin-top: 159px;
+        margin-top: 141px;
     }
 }
 
@@ -583,13 +585,19 @@ nav li:not(:first-child)::before {
     color: #666d89;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1019px) {
     .services-header {
         margin-bottom: 18px;
         height: 18px;
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .services-header {
+        margin-bottom: 18px;
+        height: 18px;
+    }
+}
 
 .services-text {
     margin: 0;
@@ -599,6 +607,12 @@ nav li:not(:first-child)::before {
     text-align: justify;
     letter-spacing: -0.01px;
     color: #767e9e;
+}
+
+@media only screen and (max-width: 1019px) {
+    .services-text {
+        height: 99px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
